@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "554806482377",
+    "project_id": "myiammatrixxxnotes",
+    "storage_bucket": "myiammatrixxxnotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554806482377:android:643a8ca289069e3040c418",
+        "android_client_info": {
+          "package_name": "com.iammatrixxx.mynotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEEgo2P2R5LYUE1YEdaaxi9kg7mXSHlrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
