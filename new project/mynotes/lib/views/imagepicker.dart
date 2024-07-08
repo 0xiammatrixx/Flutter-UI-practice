@@ -11,13 +11,21 @@ class ImagePickerWidget extends StatefulWidget {
 class _ImagePickerWidgetState extends State<ImagePickerWidget> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(children: [
-        Container( height: 300,
-          color: Colors.grey,
-          child: const Text('Image not picked'),
-        ),
-      ],),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Image Picker'),
+      ),
+      body: Center(
+        child: Column(children: [
+            Container( height: 300,
+              color: Colors.grey,
+              child: const Text('Image not picked'),
+            ),
+            ElevatedButton(onPressed: (){
+
+            }, child: const Text('Pick Image'))
+          ],),
+      ),
     );
   }
 }
