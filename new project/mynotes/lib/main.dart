@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mynotes/views/imagepicker.dart';
+import 'package:mynotes/views/location.dart';
 
 
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.blue,
         ),
           
-      home: const ImagePickerWidget(),
+      home: const LocatorWidget(),
     );
   }
 }
