@@ -31,7 +31,7 @@ class _ImagePickerWidgetState extends State<ImagePickerWidget> {
                 color: Colors.grey,
                 child: Center(
                     child: file == null
-                        ? Text('Image not picked')
+                        ? const Text('Image not picked')
                         : Image.file(File(file!.path),fit: BoxFit.cover,)),
               ),
             ),
@@ -47,7 +47,7 @@ class _ImagePickerWidgetState extends State<ImagePickerWidget> {
 
                 ElevatedButton(
                 onPressed: () async {
-                  final List <XFile>? photos =
+                  final List <XFile> photos =
                       await _picker.pickMultiImage();
                   setState(() {
                     files = photos;
