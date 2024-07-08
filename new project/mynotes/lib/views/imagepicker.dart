@@ -13,6 +13,7 @@ class ImagePickerWidget extends StatefulWidget {
 class _ImagePickerWidgetState extends State<ImagePickerWidget> {
   final ImagePicker _picker = ImagePicker();
   XFile? file;
+  List<XFile>? files;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +43,17 @@ class _ImagePickerWidgetState extends State<ImagePickerWidget> {
                     file = photo;
                   });
                 },
-                child: const Text('Pick Image'))
+                child: const Text('Pick Image'),),
+
+                ElevatedButton(
+                onPressed: () async {
+                  final List <XFile>? photos =
+                      await _picker.pickMultiImage();
+                  setState(() {
+                    files = photos;
+                  });
+                },
+                child: const Text('Pick Images'))
           ],
         ),
       ),
