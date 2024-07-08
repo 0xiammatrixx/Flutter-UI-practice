@@ -16,11 +16,15 @@ class _ImagePickerWidgetState extends State<ImagePickerWidget> {
         title: const Text('Image Picker'),
       ),
       body: Center(
-        child: Column(children: [
-            Container( height: 300,
-            width: double.infinity,
-              color: Colors.grey,
-              child: const Text('Image not picked'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Container( height: 300,
+              width: double.infinity,
+                color: Colors.grey,
+                child: const Center(child: Text('Image not picked')),
+              ),
             ),
             ElevatedButton(onPressed: (){
 
