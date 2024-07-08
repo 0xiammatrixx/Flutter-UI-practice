@@ -7,7 +7,6 @@ class RowColumns extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final w = MediaQuery.of(context).size.width;
-    final h = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(title: const Text('RowColumn'), 
       backgroundColor: Colors.deepPurple),
