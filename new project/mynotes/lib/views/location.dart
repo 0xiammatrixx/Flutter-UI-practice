@@ -69,7 +69,7 @@ class _LocatorWidgetState extends State<LocatorWidget> {
                 onPressed: () {
                   fetchposition();
                 },
-                child: Text('Show Location'))
+                child: const Text('Show Location'))
           ],
         ),
       ),
