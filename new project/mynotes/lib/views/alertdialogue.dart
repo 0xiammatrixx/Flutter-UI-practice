@@ -27,7 +27,7 @@ Future<void> _showMyDialog (BuildContext context)async {
       content: const SingleChildScrollView(
         child: ListBody(
           children: [
-            Text('Alert Name'),
+            Text('Alert'),
             Text('Alert Description'),  
           ],
         ),
