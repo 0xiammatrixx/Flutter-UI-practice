@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 
 class ImagePickerWidget extends StatefulWidget {
@@ -9,6 +10,7 @@ class ImagePickerWidget extends StatefulWidget {
 }
 
 class _ImagePickerWidgetState extends State<ImagePickerWidget> {
+  XFile? file;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
