@@ -24,7 +24,7 @@ class _ListGridState extends State<ListGrid> {
 
     body: Column(
       children: [
-        Container( height: 300, width: MediaQuery.of(context).size.width,
+        SizedBox( height: 300, width: MediaQuery.of(context).size.width,
           // child: ListView.builder(
           //   itemCount: fruits.length,
           //   itemBuilder: (context, index) {
@@ -69,7 +69,7 @@ class _ListGridState extends State<ListGrid> {
         ),
         const SizedBox(height: 45,),
 
-        Container( height: 300, width: MediaQuery.of(context).size.width,
+        SizedBox( height: 300, width: MediaQuery.of(context).size.width,
         child: GridView(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,

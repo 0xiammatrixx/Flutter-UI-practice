@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mynotes/views/animatedtext.dart';
-import 'package:mynotes/views/bottomnavigation.dart';
-import 'package:mynotes/views/forms.dart';
 import 'package:mynotes/views/tabbar.dart';
 
 
@@ -19,8 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark, 
-        primaryColor: Colors.deepPurple,
+        brightness: Brightness.dark,
+        primaryColor: Colors.blue,
         ),
           
       home: const TabBarWidget(),

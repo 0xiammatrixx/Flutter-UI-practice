@@ -41,7 +41,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
       ),
       body: PageView(
         controller: pageController,
-        children: [
+        children: const [
           AlertWidget(),
           DissmissibleWidget(),
           RowColumns(),

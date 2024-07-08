@@ -23,8 +23,8 @@ Future<void> _showMyDialog (BuildContext context)async {
   return showDialog(context: context, builder: (BuildContext context){
     return   AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      title: Text('This is an alert'),
-      content: SingleChildScrollView(
+      title: const Text('This is an alert'),
+      content: const SingleChildScrollView(
         child: ListBody(
           children: [
             Text('Alert Name'),
