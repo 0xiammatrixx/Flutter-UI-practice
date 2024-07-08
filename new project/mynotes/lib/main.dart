@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mynotes/views/imagepicker.dart';
-import 'package:mynotes/views/tabbar.dart';
 
 
 
