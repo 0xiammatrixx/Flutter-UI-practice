@@ -15,8 +15,8 @@ class _ImagePickerWidgetState extends State<ImagePickerWidget> {
       child: Column(children: [
         Container( height: 300,
           color: Colors.grey,
-          child: Text('Image not picked'),
-        )
+          child: const Text('Image not picked'),
+        ),
       ],),
     );
   }
