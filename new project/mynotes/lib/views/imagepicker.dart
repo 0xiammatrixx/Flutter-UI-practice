@@ -28,16 +28,19 @@ class _ImagePickerWidgetState extends State<ImagePickerWidget> {
                 height: 300,
                 width: double.infinity,
                 color: Colors.grey,
-                child: Center(child:file==null? Text('Image not picked'): Image.file(File(file!.path))),
+                child: Center(
+                    child: file == null
+                        ? Text('Image not picked')
+                        : Image.file(File(file!.path),fit: BoxFit.cover,)),
               ),
             ),
             ElevatedButton(
                 onPressed: () async {
                   final XFile? photo =
                       await _picker.pickImage(source: ImageSource.gallery);
-                      setState(() {
-                        file = photo;
-                      });
+                  setState(() {
+                    file = photo;
+                  });
                 },
                 child: const Text('Pick Image'))
           ],
