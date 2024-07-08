@@ -11,6 +11,13 @@ class ImagePickerWidget extends StatefulWidget {
 class _ImagePickerWidgetState extends State<ImagePickerWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Center(
+      child: Column(children: [
+        Container( height: 300,
+          color: Colors.grey,
+          child: Text('Image not picked'),
+        )
+      ],),
+    );
   }
 }

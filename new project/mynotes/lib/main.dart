@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mynotes/views/imagepicker.dart';
 import 'package:mynotes/views/tabbar.dart';
 
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.blue,
         ),
           
-      home: const TabBarWidget(),
+      home: const ImagePickerWidget(),
     );
   }
 }
